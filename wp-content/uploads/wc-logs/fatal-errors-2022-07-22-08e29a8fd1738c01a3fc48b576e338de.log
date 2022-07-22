@@ -1,0 +1,14 @@
+2022-07-22T19:12:50+00:00 CRITICAL Uncaught Error: Cannot use object of type WP_Error as array in C:\xampp\htdocs\wordpress6\wp-content\plugins\elementor\includes\template-library\manager.php:457
+Stack trace:
+#0 [internal function]: Elementor\TemplateLibrary\Manager->import_template(Array)
+#1 C:\xampp\htdocs\wordpress6\wp-content\plugins\elementor\includes\template-library\manager.php(550): call_user_func(Array, Array)
+#2 C:\xampp\htdocs\wordpress6\wp-content\plugins\elementor\includes\template-library\manager.php(582): Elementor\TemplateLibrary\Manager->handle_ajax_request('import_template', Array)
+#3 [internal function]: Elementor\TemplateLibrary\Manager->Elementor\TemplateLibrary\{closure}(Array, Object(Elementor\Core\Common\Modules\Ajax\Module))
+#4 C:\xampp\htdocs\wordpress6\wp-content\plugins\elementor\core\common\modules\ajax\module.php(171): call_user_func(Object(Closure), Array, Object(Elementor\Core\Common\Modules\Ajax\Module))
+#5 C:\xampp\htdocs\wordpress6\wp-includes\class-wp-hook.php(307): Elementor\Core\Common\Modules\Ajax\Module->handle_ajax_request('')
+#6 C:\xampp\htdocs\wordpress6\wp-includes\class-wp-hook.php(331): WP_Hook->apply_filters('', Array)
+#7 C:\xampp\htdocs\wordpress6\wp-includes\plugin.php(476): WP_Hook->do_action(Array)
+#8 C:\xampp\htdocs\wordpress6\wp-admin\admin-ajax.php(187): do_action('wp_ajax_element...')
+#9 {main}
+  thrown in C:\xampp\htdocs\wordpress6\wp-content\plugins\elementor\includes\template-library\manager.php on line 457
+
